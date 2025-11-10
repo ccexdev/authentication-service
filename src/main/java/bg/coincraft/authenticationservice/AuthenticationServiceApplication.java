@@ -1,4 +1,4 @@
-package bg.coincraft.authentication_service;
+package bg.coincraft.authenticationservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
