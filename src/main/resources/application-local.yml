@@ -1,0 +1,32 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /
+spring:
+  config:
+    activate:
+      on-profile: local
+  application:
+    name: authenticationservice
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/local-realm
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+      springframework:
+        security: trace
+
+#keycloak:
+#  server-url: http://localhost:8080
+#  realm: master
+#  user-realm: local-realm
+#  grant-type: password
+#  client-id: admin-cli
+#  user-client-id: local-client
+#  username: admin
+#  password: admin
